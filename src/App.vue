@@ -10,11 +10,16 @@
 import {provide} from "vue"
 import * as echarts from "echarts"
 import axios from "axios"
+// import mysql from "mysql"
+
+// axios.defaults.baseURL = "http://localhost:8989"
+axios.defaults.baseURL = "https://aws.jianghuan.top/bi_data"
 
 export default {
   setup() {
     provide("echarts", echarts)
     provide("axios", axios)
+    // provide("mysql", mysql)
   }
 }
 </script>

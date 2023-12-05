@@ -32,6 +32,8 @@ import educationChart from "@/components/charts/educationChart.vue"
 import monthOverviewChart from "@/components/charts/monthOverviewChart.vue"
 import departmentDimissionChart from "@/components/charts/departmentDimissionChart.vue"
 
+// import {inject} from "vue"
+
 export default {
   components:{
     overviewPage,
@@ -44,7 +46,13 @@ export default {
     educationChart,
     monthOverviewChart,
     departmentDimissionChart
-  }
+  },
+  // setup(){
+  //   let $echarts=inject("echarts")
+  //   let $axios=inject("axios")
+  //   console.log($echarts)
+  //   console.log($axios)
+  // }
 }
 </script>
 
